@@ -7,20 +7,24 @@
     android:layout_height="match_parent"
     tools:context=".PlayerActivity"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@color/white">
 
+<!--    First Row-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_weight="1">
 
+<!--    Back Button-->
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_baseline_arrow_back_ios_24"
             android:background="@android:color/transparent"
-            android:layout_marginStart="5dp"
+            android:layout_marginStart="10dp"
             android:contentDescription= "@string/backButton" />
 
         <TextView
@@ -30,14 +34,15 @@
             android:text="@string/world_of_music"
             android:textSize="20sp"
             android:gravity="center"
-            android:layout_weight="1"/>
-
+            android:layout_weight="1"
+            tools:ignore="NestedWeights" />
+<!--        Fav Btn-->
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_baseline_favorite_border_24"
             android:background="@android:color/transparent"
-            android:layout_marginEnd="5dp"
+            android:layout_marginEnd="10dp"
             android:contentDescription="@string/selectFav" />
     </LinearLayout>
 
@@ -45,41 +50,131 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_margin="10dp"
-        android:src="@drawable/music_splash_note"/>
+        android:src="@drawable/music_splash_note"
+        app:shapeAppearanceOverlay="@style/curved"
+        app:strokeColor="@color/cool_blue"
+        app:strokeWidth="5dp"/>
 
+<!--    Current Song name-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:text="@string/song_name"
         android:textSize="18sp"
-        android:textAlignment="center"
-        android:textColor="@color/black"/>
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_weight="1"/>
 
+<!--    Floating Buttons for Previous, Pause, Next-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_margin="10dp">
+        android:layout_margin="10dp"
+        android:layout_weight="1">
 
+<!--        Previous Btn-->
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:icon="@drawable/ic_baseline_skip_previous_24"
-            app:iconSize="30dp"/>
+            app:iconSize="40dp"/>
+
+<!--        Play & Pause btn-->
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:icon="@drawable/ic_baseline_pause_24"
             android:layout_marginHorizontal="25dp"
-            app:iconSize="40dp"/>
+            app:iconSize="50dp"
+            app:shapeAppearanceOverlay="@style/curved"
+            android:backgroundTint="@android:color/holo_red_dark"
+            app:iconTint="@color/white"/>
+
+<!--        Next btn-->
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:icon="@drawable/ic_baseline_skip_next_24"
-            app:iconSize="30dp"/>
+            app:iconSize="40dp"/>
+    </LinearLayout>
 
+<!--    Seekbar & TextViews for it -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/start_tv"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="15sp"/>
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/end_tv"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_repeat_24"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/Repeat"
+            app:tint="@color/cool_pink"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_graphic_eq_24"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/Equalizer"
+            app:tint="@color/cool_pink"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_timer_24"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/Timer"
+            app:tint="@color/cool_pink"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_share_24"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/Share"
+            app:tint="@color/cool_pink"
+            android:layout_weight="1"/>
     </LinearLayout>
 
 

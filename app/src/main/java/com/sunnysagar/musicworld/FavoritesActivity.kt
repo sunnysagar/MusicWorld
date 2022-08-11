@@ -2,16 +2,16 @@ package com.sunnysagar.musicworld
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.sunnysagar.musicworld.databinding.ActivityPlayerBinding
+import com.sunnysagar.musicworld.databinding.ActivityFavoritesBinding
 
-class PlayerActivity : AppCompatActivity() {
+class FavoritesActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityPlayerBinding
+    private lateinit var binding: ActivityFavoritesBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setTheme(R.style.coolPink)
-        binding = ActivityPlayerBinding.inflate(layoutInflater)
+        binding = ActivityFavoritesBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
 }

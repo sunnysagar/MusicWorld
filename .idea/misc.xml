@@ -8,8 +8,12 @@
         <entry key="..\:/sunny/Pragramming/Android/MusicWorld/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.104" />
         <entry key="..\:/sunny/Pragramming/Android/MusicWorld/app/src/main/res/drawable/ic_baseline_shuffle_24.xml" value="0.104" />
         <entry key="..\:/sunny/Pragramming/Android/MusicWorld/app/src/main/res/drawable/playlist_icon.xml" value="0.104" />
+        <entry key="..\:/sunny/Pragramming/Android/MusicWorld/app/src/main/res/layout/activity_favorites.xml" value="0.2" />
         <entry key="..\:/sunny/Pragramming/Android/MusicWorld/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/sunny/Pragramming/Android/MusicWorld/app/src/main/res/layout/activity_player.xml" value="0.136" />
+        <entry key="..\:/sunny/Pragramming/Android/MusicWorld/app/src/main/res/layout/activity_player.xml" value="0.2" />
+        <entry key="..\:/sunny/Pragramming/Android/MusicWorld/app/src/main/res/layout/activity_playlist.xml" value="0.27447916666666666" />
+        <entry key="..\:/sunny/Pragramming/Android/MusicWorld/app/src/main/res/layout/nav_header.xml" value="0.13958333333333334" />
+        <entry key="..\:/sunny/Pragramming/Android/MusicWorld/app/src/main/res/menu/nav_menu.xml" value="0.27395833333333336" />
         <entry key="..\:/sunny/Pragramming/Android/MusicWorld/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>
